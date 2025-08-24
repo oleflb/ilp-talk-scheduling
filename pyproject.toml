@@ -1,0 +1,26 @@
+[project]
+name = "talk-scheduling"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas>=2.3.1",
+    "plotly>=6.3.0",
+    "pulp>=3.2.2",
+    "pytest>=8.4.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[dependency-groups]
+dev = ["talk-scheduling"]
+
+[tool.uv.sources]
+talk-scheduling = { workspace = true }
+
+# [tool.hatch.build.targets.wheel]
+# packages = ["src/talk_scheduling"]
